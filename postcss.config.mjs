@@ -1,6 +1,6 @@
 const config = {
   plugins: {
-    tailwindcss: {},
+    '@tailwindcss/postcss': {}, // Cập nhật từ 'tailwindcss' thành '@tailwindcss/postcss'
     autoprefixer: {},
   },
 };
