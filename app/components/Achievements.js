@@ -1,4 +1,5 @@
 import { Handshake, UserCheck, Briefcase, Plane } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Achievements({ content }) {
   const items = [
@@ -12,6 +13,18 @@ export default function Achievements({ content }) {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{content.title}</h2>
       </div>
+
+      {/* Ảnh minh họa cho thành tựu (ảnh bắt tay/thành phố) */}
+      <div className="w-full max-w-4xl mx-auto mb-10 rounded-xl overflow-hidden shadow-2xl">
+        <Image
+          src="/achievements_handshake.jpg"
+          alt="Global Partnership and Success"
+          width={900}
+          height={400} 
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {items.map((item, index) => (
           <div key={index} className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">

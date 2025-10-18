@@ -1,9 +1,20 @@
 import { Check } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Leadership({ content }) {
   const team = [
-    { name: content.member1_name, title: content.member1_title, points: [content.member1_exp1, content.member1_exp2, content.member1_exp3] },
-    { name: content.member2_name, title: content.member2_title, points: [content.member2_exp1, content.member2_exp2, content.member2_exp3, content.member2_exp4] }
+    { 
+        name: content.member1_name, 
+        title: content.member1_title, 
+        points: [content.member1_exp1, content.member1_exp2, content.member1_exp3],
+        image: "/leadership_yeoh.jpg"
+    },
+    { 
+        name: content.member2_name, 
+        title: content.member2_title, 
+        points: [content.member2_exp1, content.member2_exp2, content.member2_exp3, content.member2_exp4],
+        image: "/leadership_zamri.jpg"
+    }
   ]
   return (
     <section id="team" className="scroll-mt-16 bg-gray-100 dark:bg-gray-800">
@@ -13,10 +24,22 @@ export default function Leadership({ content }) {
       </div>
       <div className="grid md:grid-cols-2 gap-10">
         {team.map(member => (
-          <div key={member.name} className="p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+          <div key={member.name} className="p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg flex flex-col items-center text-center">
+            
+            {/* Ảnh chân dung (sẽ tự động cắt thành hình tròn) */}
+            <div className="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-brand-blue/50">
+                <Image 
+                    src={member.image} 
+                    alt={member.name} 
+                    width={160} 
+                    height={160}
+                    className="object-cover w-full h-full"
+                />
+            </div>
+            
             <h3 className="text-2xl font-bold">{member.name}</h3>
             <p className="text-brand-blue font-semibold mb-4">{member.title}</p>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mt-4 text-left">
               {member.points.map((point, i) => (
                 <li key={i} className="flex items-start">
                   <Check className="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
