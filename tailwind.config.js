@@ -2,7 +2,9 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/page.js",
+    "./app/layout.js",
+    "./app/components/**/*.{js,ts,jsx,tsx,mdx}", // Đã cập nhật đường dẫn
   ],
   theme: {
     extend: {
