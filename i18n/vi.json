@@ -1,0 +1,82 @@
+{
+  "header": {
+    "about": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "team": "Đội ngũ",
+    "achievements": "Thành tựu",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "title": "CÙNG NHAU PHÁT TRIỂN",
+    "subtitle": "Kết nối các tổ chức giáo dục với tài năng toàn cầu, tích hợp công nghệ giáo dục (EdTech) tiên tiến và thúc đẩy quan hệ đối tác quốc tế để khai phá tiềm năng tăng trưởng bền vững."
+  },
+  "mission": {
+    "title": "Sứ mệnh & Tầm nhìn",
+    "description": "Chúng tôi hợp tác với các tổ chức giáo dục để nâng cao năng lực cạnh tranh toàn cầu. Bằng cách tích hợp các giải pháp EdTech tiên tiến và thúc đẩy các liên minh quốc tế, chúng tôi giúp các đối tác thu hút nhân tài hàng đầu và đạt được các tiêu chuẩn đẳng cấp thế giới.",
+    "pillarsTitle": "Các Trụ cột Chiến lược",
+    "pillar1_title": "Quan hệ Đối tác Toàn cầu",
+    "pillar1_desc": "Xây dựng mạng lưới toàn cầu cho hoạt động nghiên cứu, sự công nhận và trao đổi sinh viên.",
+    "pillar2_title": "Tích hợp Công nghệ Giáo dục (EdTech)",
+    "pillar2_desc": "Triển khai các công cụ kỹ thuật số tiên tiến để nâng cao hiệu quả học tập và vận hành."
+  },
+  "services": {
+    "title": "Dịch vụ Cốt lõi",
+    "service1_title": "Tuyển sinh Quốc tế",
+    "service1_desc": "Kết nối các tổ chức giáo dục với sinh viên tài năng toàn cầu đủ điều kiện từ các thị trường trọng điểm ở châu Á.",
+    "service2_title": "Tư vấn & Tích hợp EdTech",
+    "service2_desc": "Tùy chỉnh, triển khai và hỗ trợ các hệ thống quản lý giáo dục hiện đại để tăng hiệu quả.",
+    "service3_title": "Phát triển Tài năng",
+    "service3_desc": "Tổ chức các buổi hội thảo, đào tạo và chương trình trao đổi chuyên biệt để nâng cao kỹ năng và sự sẵn sàng hội nhập toàn cầu."
+  },
+  "value": {
+    "title": "Giá trị của Chúng tôi",
+    "subtitle": "Chúng tôi mang lại những kết quả có thể đo lường được, phù hợp với các chỉ số hiệu suất chính (KPI) của đối tác.",
+    "prop1_title": "Đảm bảo Chỉ tiêu Tuyển sinh",
+    "prop1_item1": "Tiếp cận tài năng toàn cầu chất lượng",
+    "prop1_item2": "Chiến lược tiếp cận các thị trường trọng điểm ở Châu Á",
+    "prop1_item3": "Đảm bảo đạt được mục tiêu tuyển sinh",
+    "prop2_title": "Nâng cao năng lực cạnh tranh toàn cầu",
+    "prop2_item1": "Các hội thảo và khóa đào tạo kỹ năng có tác động cao",
+    "prop2_item2": "Cơ hội thực tập quốc tế",
+    "prop2_item3": "Các chương trình trao đổi nhân viên & sinh viên",
+    "prop3_title": "Tăng hiệu quả Vận hành",
+    "prop3_desc": "Giảm gánh nặng hành chính và tăng hiệu quả giảng dạy hơn 30% thông qua việc triển khai các hệ thống quản lý giáo dục hiện đại, được tùy chỉnh riêng."
+  },
+  "leadership": {
+    "title": "Đội ngũ Lãnh đạo",
+    "subtitle": "Kinh nghiệm và tầm nhìn đằng sau EduConnect Services.",
+    "member1_name": "Justin Yeoh",
+    "member1_title": "Nhà sáng lập & Giám đốc Điều hành",
+    "member1_exp1": "Hơn 35 năm kinh nghiệm quản lý cấp cao.",
+    "member1_exp2": "Chuyên môn trong cả lĩnh vực giáo dục học thuật và giáo dục nghề nghiệp (TVET).",
+    "member1_exp3": "Có các bằng cấp như Chartered Marketer, Kế toán chuyên nghiệp và Thạc sĩ Quản trị Kinh doanh (MBA).",
+    "member2_name": "Dr. Zamri",
+    "member2_title": "Trưởng bộ phận Sáng tạo & Chiến lược EdTech",
+    "member2_exp1": "Hơn 40 năm kinh nghiệm là một học giả trong lĩnh vực kỹ thuật.",
+    "member2_exp2": "Nhà phát triển startup dày dạn kinh nghiệm, tập trung vào sự đổi mới.",
+    "member2_exp3": "Đam mê phát triển thanh thiếu niên và học tập qua trải nghiệm.",
+    "member2_exp4": "Có bằng Tiến sĩ tại Vương quốc Anh."
+  },
+  "achievements": {
+    "title": "Thành tựu Nổi bật",
+    "item1_title": "Hợp tác",
+    "item1_desc": "Xây dựng mạng lưới vững mạnh với hơn 20+ đối tác đại học khắp Đông Nam Á cho các chương trình hợp tác.",
+    "item2_title": "Tuyển sinh",
+    "item2_desc": "Hỗ trợ tuyển sinh thành công cho hàng trăm sinh viên quốc tế, vượt chỉ tiêu tuyển sinh của các đối tác.",
+    "item3_title": "Thực tập",
+    "item3_desc": "Xây dựng mạng lưới thực tập vững chắc với các tập đoàn đa quốc gia trong các lĩnh vực trọng điểm như Ngân hàng, Hàng không và Công nghệ.",
+    "item4_title": "Chuyến đi học tập",
+    "item4_desc": "Thiết kế và thực hiện thành công nhiều chuyến đi học tập quốc tế để nâng cao trải nghiệm và học hỏi toàn cầu."
+  },
+  "contact": {
+    "title": "Hãy Kết nối",
+    "subtitle": "Hãy để chúng tôi giúp bạn định hướng tương lai của giáo dục. Cùng nhau, chúng ta có thể thúc đẩy sự tiến bộ và đạt được thành công.",
+    "malaysia_office": "Văn phòng Malaysia",
+    "vietnam_office": "Văn phòng Việt Nam",
+    "phone": "Điện thoại",
+    "email": "Email"
+  },
+  "footer": {
+    "copy": "© 2025 EduConnect Services. Mọi quyền được bảo lưu."
+  }
+}
