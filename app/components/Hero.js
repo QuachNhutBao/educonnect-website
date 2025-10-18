@@ -8,5 +8,5 @@ export default function Hero({ content }) {
         {content.subtitle}
       </p>
     </section>
-  );
+  )
 }
