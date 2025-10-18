@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./app/page.js",
     "./app/layout.js",
@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-blue': '#3b82f6',
-        'brand-gray': '#6b7280',
+        "brand-blue": "#3b82f6",
+        "brand-gray": "#6b7280",
       },
     },
   },

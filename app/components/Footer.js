@@ -5,5 +5,5 @@ export default function Footer({ content }) {
         <p className="text-gray-400">{content.copy}</p>
       </div>
     </footer>
-  )
+  );
 }
