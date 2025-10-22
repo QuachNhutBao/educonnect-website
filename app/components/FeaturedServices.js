@@ -1,20 +1,20 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-export default function FeaturedServices({ content }) {
-  // Chúng ta sẽ lấy 3 dịch vụ cốt lõi từ i18n
+// 1. THÊM PROP "showCta = true"
+export default function FeaturedServices({ content, showCta = true }) {
   const services = [
     {
       title: content.service1_title,
-      description: content.service1_desc_short, // Cần key mới (short desc)
+      description: content.service1_desc_short,
     },
     {
       title: content.service2_title,
-      description: content.service2_desc_short, // Cần key mới (short desc)
+      description: content.service2_desc_short,
     },
     {
       title: content.service3_title,
-      description: content.service3_desc_short, // Cần key mới (short desc)
+      description: content.service3_desc_short,
     },
   ]
 
@@ -30,7 +30,6 @@ export default function FeaturedServices({ content }) {
           </p>
         </div>
 
-        {/* Lưới các dịch vụ */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <div
@@ -47,16 +46,18 @@ export default function FeaturedServices({ content }) {
           ))}
         </div>
 
-        {/* Nút CTA xem tất cả dịch vụ */}
-        <div className="text-center">
-          <Link
-            href="/services"
-            className="inline-flex items-center py-3 px-8 bg-brand-blue text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
-          >
-            {content.cta}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </div>
+        {/* 2. BỌC NÚT CTA TRONG ĐIỀU KIỆN "showCta" */}
+        {showCta && (
+          <div className="text-center">
+            <Link
+              href="/services"
+              className="inline-flex items-center py-3 px-8 bg-brand-blue text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
+            >
+              {content.cta}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   )
