@@ -111,6 +111,15 @@
       { "name": "Tunku Abdul Rahman University of Management and Technology (TAR UMT)", "logo": "/partners/logo-tarumt.png" }
     ]
   },
+  "newsSection": {
+    "title": "Tin tức Nổi bật",
+    "featured": {
+      "image": "/blog/study-in-malaysia.jpg",
+      "title": "Cẩm nang Du học Malaysia 2026: Chi phí, Học bổng và các Trường hàng đầu",
+      "excerpt": "Malaysia đang trở thành điểm đến du học hấp dẫn tại châu Á với chi phí hợp lý và chất lượng giáo dục được công nhận toàn cầu. Hãy cùng EduConnect khám phá...",
+      "cta": "Đọc tiếp..."
+    }
+  },
   "footer": {
     "about": "Giới thiệu",
     "services": "Dịch vụ",

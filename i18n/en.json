@@ -111,6 +111,15 @@
       { "name": "Tunku Abdul Rahman University of Management and Technology (TAR UMT)", "logo": "/partners/logo-tarumt.png" }
     ]
   },
+  "newsSection": {
+    "title": "Featured News",
+    "featured": {
+      "image": "/blog/study-in-malaysia.jpg",
+      "title": "Guide to Studying in Malaysia 2026: Costs, Scholarships, and Top Universities",
+      "excerpt": "Malaysia is becoming an attractive study destination in Asia with reasonable costs and globally recognized quality of education. Let's explore with EduConnect...",
+      "cta": "Read more..."
+    }
+  },
   "footer": {
     "about": "About",
     "services": "Services",
