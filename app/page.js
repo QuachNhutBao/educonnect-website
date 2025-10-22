@@ -1,39 +1,28 @@
-'use client'
+"use client" // Vẫn cần "use client" để dùng hook useLanguage
 
-import { useState, useEffect } from 'react'
-import Header from './components/Header'
+import { useLanguage } from './context/LanguageContext' // 1. IMPORT hook
 import Hero from './components/Hero'
 import WhyChooseUs from './components/WhyChooseUs'
-import FeaturedServices from './components/FeaturedServices' // 1. IMPORT
+import FeaturedServices from './components/FeaturedServices'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
-
-import en from '../i18n/en.json'
-import vi from '../i18n/vi.json'
+// --- KHÔNG CẦN import Header, Footer, useState, useEffect, i18n ---
 
 export default function Home() {
-  const [lang, setLang] = useState('en');
-  const [content, setContent] = useState(en);
+  // 2. LẤY CONTENT TỪ TRUNG TÂM (CONTEXT)
+  const { content } = useLanguage()
 
-  useEffect(() => {
-    setContent(lang === 'en' ? en : vi);
-  }, [lang]);
-
-  const toggleLang = () => {
-    setLang(currentLang => (currentLang === 'en' ? 'vi' : 'en'));
-  };
+  // --- KHÔNG CẦN LOGIC (useState, useEffect, toggleLang) ---
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <Header content={content.header} lang={lang} toggleLang={toggleLang} />
+    // Component MainLayout (cha) đã có class "flex flex-col items-center"
+    // nên chúng ta không cần <main> ở đây
+    <>
+      {/* 3. CHỈ RENDER CÁC COMPONENT CỦA TRANG CHỦ */}
       <Hero content={content.hero} />
       <WhyChooseUs content={content.whyChooseUs} />
-      
-      {/* 2. THÊM VÀO ĐÂY (truyền content.services và content.featuredServices) */}
       <FeaturedServices content={{...content.services, ...content.featuredServices}} />
-
       <Contact content={content.contact} />
-      <Footer content={content.footer} />
-    </main>
+    </>
+    // --- KHÔNG CẦN RENDER Header, Footer ---
   )
 }

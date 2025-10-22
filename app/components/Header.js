@@ -1,15 +1,16 @@
 "use client"
 
 import Image from 'next/image'
-import Link from 'next/link' // Đã import Link
+import Link from 'next/link'
 import ThemeSwitcher from './ThemeSwitcher'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation' // 1. IMPORT HOOK MỚI
 
 export default function Header({ content, lang, toggleLang }) {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname() // 2. LẤY URL HIỆN TẠI
 
-  // Đã cập nhật mảng navLinks để trỏ đến các trang mới
   const navLinks = [
     { href: '/', label: content.home },
     { href: '/about', label: content.about },
@@ -24,20 +25,33 @@ export default function Header({ content, lang, toggleLang }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            {/* Đã thay <a> bằng <Link> */}
             <Link href="/" className="flex items-center gap-2">
               <Image src="/Logo_Educonnect.png" alt="EduConnect Logo" width={40} height={40} />
               <span className="text-xl font-bold text-brand-blue">EduConnect</span>
             </Link>
           </div>
+          
+          {/* 3. CẬP NHẬT LOGIC CLASSNAME CHO DESKTOP */}
           <nav className="hidden md:flex md:items-center md:gap-8">
-            {navLinks.map(link => (
-              // Đã thay <a> bằng <Link>
-              <Link key={link.href} href={link.href} className="font-medium text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors">
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map(link => {
+              const isActive = pathname === link.href
+              return (
+                <Link 
+                  key={link.href} 
+                  href={link.href} 
+                  // Nếu link active, dùng 'text-brand-blue', nếu không thì dùng class cũ
+                  className={`font-medium ${
+                    isActive 
+                      ? 'text-brand-blue' 
+                      : 'text-gray-600 dark:text-gray-300'
+                  } hover:text-brand-blue dark:hover:text-brand-blue transition-colors`}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
           </nav>
+          
           <div className="flex items-center gap-4">
             <button
               onClick={toggleLang}
@@ -54,20 +68,28 @@ export default function Header({ content, lang, toggleLang }) {
           </div>
         </div>
       </div>
-      {/* Mobile Menu */}
+      
+      {/* 4. CẬP NHẬT LOGIC CLASSNAME CHO MOBILE */}
       {isOpen && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-2">
-          {navLinks.map(link => (
-            // Đã thay <a> bằng <Link> và giữ lại onClick
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map(link => {
+             const isActive = pathname === link.href
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                // Nếu link active, dùng 'bg-gray-200 dark:bg-gray-800', nếu không thì dùng class cũ
+                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  isActive
+                    ? 'bg-gray-200 dark:bg-gray-800 text-brand-blue'
+                    : 'text-gray-700 dark:text-gray-200'
+                } hover:bg-gray-200 dark:hover:bg-gray-800`}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
           <button
             onClick={() => {
               toggleLang();

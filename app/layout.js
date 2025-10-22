@@ -1,10 +1,10 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import { ThemeProvider } from './theme-provider'
-import FloatingContact from './components/FloatingContact'
-import MobileBottomNav from './components/MobileBottomNav' // 1. IMPORT
+import { LanguageProvider } from './context/LanguageContext' // 1. IMPORT PROVIDER
+import MainLayout from './components/MainLayout' // 2. IMPORT LAYOUT MỚI
 
-// Cấu hình font Montserrat
+// Cấu hình font
 const montserrat = Montserrat({
   subsets: ['latin', 'vietnamese'],
   weights: ['400', '600', '700', '800'],
@@ -21,11 +21,14 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={montserrat.className}> 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-          
-          <FloatingContact />
-          <MobileBottomNav /> {/* 2. THÊM VÀO ĐÂY */}
-
+          {/* 3. BỌC MỌI THỨ BẰNG LANGUAGE PROVIDER */}
+          <LanguageProvider>
+            {/* 4. BỌC {children} BẰNG MAINLAYOUT */}
+            <MainLayout>
+              {children}
+            </MainLayout>
+          </LanguageProvider>
+          {/* Các component nổi cũ (FloatingContact, MobileBottomNav) đã được chuyển vào MainLayout */}
         </ThemeProvider>
       </body>
     </html>

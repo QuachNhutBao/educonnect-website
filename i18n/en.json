@@ -95,6 +95,21 @@
     "phone": "Phone",
     "email": "Email"
   },
+  "aboutPage": {
+    "title": "About EduConnect"
+  },
+  "servicesPage": {
+    "title": "Our Services"
+  },
+  "partnersPage": {
+    "title": "Our Partners"
+  },
+  "newsPage": {
+    "title": "News & Events"
+  },
+  "contactPage": {
+    "title": "Contact Us"
+  },
   "footer": {
     "about": "About",
     "services": "Services",

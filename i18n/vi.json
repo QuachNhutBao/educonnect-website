@@ -95,6 +95,21 @@
     "phone": "Điện thoại",
     "email": "Email"
   },
+  "aboutPage": {
+    "title": "Giới thiệu về EduConnect"
+  },
+  "servicesPage": {
+    "title": "Dịch vụ của chúng tôi"
+  },
+  "partnersPage": {
+    "title": "Đối tác của chúng tôi"
+  },
+  "newsPage": {
+    "title": "Tin tức & sự kiện"
+  },
+  "contactPage": {
+    "title": "Liên hệ với chúng tôi"
+  },
   "footer": {
     "about": "Giới thiệu",
     "services": "Dịch vụ",
