@@ -1,7 +1,8 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import { ThemeProvider } from './theme-provider'
-import FloatingContact from './components/FloatingContact' // 1. IMPORT
+import FloatingContact from './components/FloatingContact'
+import MobileBottomNav from './components/MobileBottomNav' // 1. IMPORT
 
 // Cấu hình font Montserrat
 const montserrat = Montserrat({
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           
-          {/* 2. THÊM NÚT NỔI VÀO ĐÂY */}
           <FloatingContact />
+          <MobileBottomNav /> {/* 2. THÊM VÀO ĐÂY */}
 
         </ThemeProvider>
       </body>
