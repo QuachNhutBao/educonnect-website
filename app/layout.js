@@ -1,8 +1,13 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google' // Đã đổi sang Montserrat
 import { ThemeProvider } from './theme-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+// Cấu hình font Montserrat
+const montserrat = Montserrat({
+  subsets: ['latin', 'vietnamese'], // Thêm tiếng Việt
+  weights: ['400', '600', '700', '800'], // Thêm các độ đậm
+  variable: '--font-montserrat', // Cần thiết cho Tailwind
+})
 
 export const metadata = {
   title: 'EduConnect Services',
@@ -12,7 +17,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      {/* Áp dụng class của Montserrat */}
+      <body className={montserrat.className}> 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
