@@ -26,15 +26,6 @@
     "subtitle": "Chúng tôi cung cấp các giải pháp chuyên biệt để kết nối giáo dục và phát triển tài năng.",
     "cta": "Xem tất cả dịch vụ"
   },
-  "mission": {
-    "title": "Sứ mệnh & tầm nhìn",
-    "description": "Chúng tôi hợp tác với các tổ chức giáo dục để nâng cao năng lực cạnh tranh toàn cầu. Bằng cách tích hợp các giải pháp EdTech tiên tiến và thúc đẩy các liên minh quốc tế, chúng tôi giúp các đối tác thu hút nhân tài hàng đầu và đạt được các tiêu chuẩn đẳng cấp thế giới.",
-    "pillarsTitle": "Các trụ cột chiến lược",
-    "pillar1_title": "Quan hệ đối tác toàn cầu",
-    "pillar1_desc": "Xây dựng mạng lưới toàn cầu cho hoạt động nghiên cứu, sự công nhận và trao đổi sinh viên.",
-    "pillar2_title": "Tích hợp công nghệ giáo dục (EdTech)",
-    "pillar2_desc": "Triển khai các công cụ kỹ thuật số tiên tiến để nâng cao hiệu quả học tập và vận hành."
-  },
   "services": {
     "title": "Dịch vụ cốt lõi",
     "service1_title": "Tuyển sinh quốc tế",
@@ -109,6 +100,16 @@
   },
   "contactPage": {
     "title": "Liên hệ với chúng tôi"
+  },
+  "partnersGrid": {
+    "title": "Các đối tác hàng đầu của chúng tôi",
+    "logos": [
+      { "name": "Universiti Teknologi Malaysia (UTM)", "logo": "/partners/logo-utm.png" },
+      { "name": "UOW Malaysia KDU", "logo": "/partners/logo-uow.png" },
+      { "name": "Universiti Tun Abdul Razak (UNIRAZAK)", "logo": "/partners/logo-unirazak.png" },
+      { "name": "UNITAR International University", "logo": "/partners/logo-unitar.png" },
+      { "name": "Tunku Abdul Rahman University of Management and Technology (TAR UMT)", "logo": "/partners/logo-tarumt.png" }
+    ]
   },
   "footer": {
     "about": "Giới thiệu",

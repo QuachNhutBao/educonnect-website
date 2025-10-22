@@ -26,15 +26,6 @@
     "subtitle": "We provide specialized solutions to bridge gaps in education and talent development.",
     "cta": "View All Services"
   },
-  "mission": {
-    "title": "Our Mission & Vision",
-    "description": "We partner with educational institutions to enhance their global competitiveness. By integrating advanced EdTech solutions and fostering international alliances, we help partners attract top talent and achieve world-class standards.",
-    "pillarsTitle": "Our Strategic Pillars",
-    "pillar1_title": "Global Partnerships",
-    "pillar1_desc": "Building a worldwide network for research, recognition, and student mobility.",
-    "pillar2_title": "EdTech Integration",
-    "pillar2_desc": "Deploying advanced digital tools to enhance learning and operational efficiency."
-  },
   "services": {
     "title": "Our Core Services",
     "service1_title": "International Student Recruitment",
@@ -109,6 +100,16 @@
   },
   "contactPage": {
     "title": "Contact Us"
+  },
+  "partnersGrid": {
+    "title": "Our Leading Partners",
+    "logos": [
+      { "name": "Universiti Teknologi Malaysia (UTM)", "logo": "/partners/logo-utm.png" },
+      { "name": "UOW Malaysia KDU", "logo": "/partners/logo-uow.png" },
+      { "name": "Universiti Tun Abdul Razak (UNIRAZAK)", "logo": "/partners/logo-unirazak.png" },
+      { "name": "UNITAR International University", "logo": "/partners/logo-unitar.png" },
+      { "name": "Tunku Abdul Rahman University of Management and Technology (TAR UMT)", "logo": "/partners/logo-tarumt.png" }
+    ]
   },
   "footer": {
     "about": "About",
