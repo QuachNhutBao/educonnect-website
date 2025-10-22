@@ -21,6 +21,11 @@
     "feature3_title": "Talent Development",
     "feature3_desc": "Specialized internship and exchange programs focused on practical, in-demand skills."
   },
+  "featuredServices": {
+    "title": "Our Core Services",
+    "subtitle": "We provide specialized solutions to bridge gaps in education and talent development.",
+    "cta": "View All Services"
+  },
   "mission": {
     "title": "Our Mission & Vision",
     "description": "We partner with educational institutions to enhance their global competitiveness. By integrating advanced EdTech solutions and fostering international alliances, we help partners attract top talent and achieve world-class standards.",
@@ -34,10 +39,13 @@
     "title": "Our Core Services",
     "service1_title": "International Student Recruitment",
     "service1_desc": "Connecting institutions with qualified global student talent from key Asian markets.",
+    "service1_desc_short": "Connecting institutions with qualified student talent from key Asian markets.",
     "service2_title": "EdTech Consultation & Integration",
     "service2_desc": "Customizing, deploying, and supporting modern education management systems to boost efficiency.",
+    "service2_desc_short": "Customizing, deploying, and supporting modern EMS systems to boost operational efficiency.",
     "service3_title": "Talent Development",
-    "service3_desc": "Organizing specialized workshops, training, and exchange programs to enhance skills and global readiness."
+    "service3_desc": "Organizing specialized workshops, training, and exchange programs to enhance skills and global readiness.",
+    "service3_desc_short": "Organizing specialized workshops, training, and exchange programs to enhance global skills."
   },
   "value": {
     "title": "Our Value",

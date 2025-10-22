@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import WhyChooseUs from './components/WhyChooseUs' // 1. IMPORT COMPONENT MỚI
+import WhyChooseUs from './components/WhyChooseUs'
+import FeaturedServices from './components/FeaturedServices' // 1. IMPORT
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -26,9 +27,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center">
       <Header content={content.header} lang={lang} toggleLang={toggleLang} />
       <Hero content={content.hero} />
+      <WhyChooseUs content={content.whyChooseUs} />
       
-      {/* 2. THÊM COMPONENT VÀO ĐÂY */}
-      <WhyChooseUs content={content.whyChooseUs} /> 
+      {/* 2. THÊM VÀO ĐÂY (truyền content.services và content.featuredServices) */}
+      <FeaturedServices content={{...content.services, ...content.featuredServices}} />
 
       <Contact content={content.contact} />
       <Footer content={content.footer} />

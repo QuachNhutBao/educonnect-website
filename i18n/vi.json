@@ -21,6 +21,11 @@
     "feature3_title": "Phát triển tài năng",
     "feature3_desc": "Các chương trình thực tập và trao đổi chuyên biệt, tập trung vào kỹ năng thực tiễn."
   },
+  "featuredServices": {
+    "title": "Dịch vụ cốt lõi của chúng tôi",
+    "subtitle": "Chúng tôi cung cấp các giải pháp chuyên biệt để kết nối giáo dục và phát triển tài năng.",
+    "cta": "Xem tất cả dịch vụ"
+  },
   "mission": {
     "title": "Sứ mệnh & tầm nhìn",
     "description": "Chúng tôi hợp tác với các tổ chức giáo dục để nâng cao năng lực cạnh tranh toàn cầu. Bằng cách tích hợp các giải pháp EdTech tiên tiến và thúc đẩy các liên minh quốc tế, chúng tôi giúp các đối tác thu hút nhân tài hàng đầu và đạt được các tiêu chuẩn đẳng cấp thế giới.",
@@ -34,10 +39,13 @@
     "title": "Dịch vụ cốt lõi",
     "service1_title": "Tuyển sinh quốc tế",
     "service1_desc": "Kết nối các tổ chức giáo dục với sinh viên tài năng toàn cầu đủ điều kiện từ các thị trường trọng điểm ở châu Á.",
+    "service1_desc_short": "Kết nối các tổ chức giáo dục với sinh viên tài năng toàn cầu từ các thị trường trọng điểm châu Á.",
     "service2_title": "Tư vấn & tích hợp EdTech",
     "service2_desc": "Tùy chỉnh, triển khai và hỗ trợ các hệ thống quản lý giáo dục hiện đại để tăng hiệu quả.",
+    "service2_desc_short": "Tùy chỉnh, triển khai và hỗ trợ các hệ thống quản lý giáo dục hiện đại để tăng hiệu quả vận hành.",
     "service3_title": "Phát triển tài năng",
-    "service3_desc": "Tổ chức các buổi hội thảo, đào tạo và chương trình trao đổi chuyên biệt để nâng cao kỹ năng và sự sẵn sàng hội nhập toàn cầu."
+    "service3_desc": "Tổ chức các buổi hội thảo, đào tạo và chương trình trao đổi chuyên biệt để nâng cao kỹ năng và sự sẵn sàng hội nhập toàn cầu.",
+    "service3_desc_short": "Tổ chức hội thảo, đào tạo và chương trình trao đổi chuyên biệt để nâng cao kỹ năng hội nhập."
   },
   "value": {
     "title": "Giá trị của chúng tôi",
