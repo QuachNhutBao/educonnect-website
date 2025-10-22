@@ -1,9 +1,10 @@
 {
   "header": {
+    "home": "Home",
     "about": "About",
     "services": "Services",
-    "team": "Team",
-    "achievements": "Achievements",
+    "partners": "Partners",
+    "news": "News",
     "contact": "Contact"
   },
   "hero": {
@@ -12,7 +13,7 @@
   },
   "mission": {
     "title": "Our Mission & Vision",
-    "description": "We partner with educational institutions to enhance their global competitiveness. By integrating advanced EdTech solutions and fostering international alliances, we help our partners attract top talent and achieve world-class standards.",
+    "description": "We partner with educational institutions to enhance their global competitiveness. By integrating advanced EdTech solutions and fostering international alliances, we help partners attract top talent and achieve world-class standards.",
     "pillarsTitle": "Our Strategic Pillars",
     "pillar1_title": "Global Partnerships",
     "pillar1_desc": "Building a worldwide network for research, recognition, and student mobility.",
@@ -22,51 +23,51 @@
   "services": {
     "title": "Our Core Services",
     "service1_title": "International Student Recruitment",
-    "service1_desc": "Connecting educational institutions with qualified global student talent from key Asian markets.",
+    "service1_desc": "Connecting institutions with qualified global student talent from key Asian markets.",
     "service2_title": "EdTech Consultation & Integration",
-    "service2_desc": "Customising, deploying, and supporting state-of-the-art education management systems to increase efficiency.",
+    "service2_desc": "Customizing, deploying, and supporting modern education management systems to boost efficiency.",
     "service3_title": "Talent Development",
-    "service3_desc": "Organising specialised workshops, training, and exchange programs to enhance skills and global readiness."
+    "service3_desc": "Organizing specialized workshops, training, and exchange programs to enhance skills and global readiness."
   },
   "value": {
-    "title": "Our Value Proposition",
-    "subtitle": "We deliver measurable results that align with your institution's key performance indicators (KPIs).",
-    "prop1_title": "Guaranteed Enrollment Fulfillment",
-    "prop1_item1": "Access to qualified global talent",
-    "prop1_item2": "Strategic outreach in key Asian markets",
-    "prop1_item3": "Assurance in meeting enrollment targets",
+    "title": "Our Value",
+    "subtitle": "We deliver measurable results aligned with our partners' key performance indicators (KPIs).",
+    "prop1_title": "Guaranteed Enrolment Metrics",
+    "prop1_item1": "Access to quality global talent",
+    "prop1_item2": "Strategic access to key Asian markets",
+    "prop1_item3": "Ensuring enrolment targets are met",
     "prop2_title": "Enhanced Global Competitiveness",
-    "prop2_item1": "High-impact workshops & skills training",
+    "prop2_item1": "High-impact skills workshops and training",
     "prop2_item2": "International internship opportunities",
-    "prop2_item3": "Staff & student mobility programs",
+    "prop2_item3": "Staff & student exchange programs",
     "prop3_title": "Increased Operational Efficiency",
-    "prop3_desc": "Reduce administrative burdens and increase instructional efficiency by over 30% through the deployment of customized, state-of-the-art education management systems."
+    "prop3_desc": "Reduce administrative burdens and increase teaching effectiveness by over 30% through customized, modern education management system implementation."
   },
   "leadership": {
-    "title": "Our Leadership Team",
+    "title": "Leadership Team",
     "subtitle": "The experience and vision behind EduConnect Services.",
     "member1_name": "Justin Yeoh",
-    "member1_title": "Founder & Managing Director",
+    "member1_title": "Founder & CEO",
     "member1_exp1": "Over 35 years of senior management experience.",
-    "member1_exp2": "Expertise in both academic and TVET education.",
-    "member1_exp3": "Holds qualifications as a Chartered Marketer, Professional Accountant and an MBA.",
+    "member1_exp2": "Expertise in both academic and TVET sectors.",
+    "member1_exp3": "Holds Chartered Marketer, Professional Accountant, and MBA qualifications.",
     "member2_name": "Dr. Zamri",
-    "member2_title": "Head of Innovation & EdTech Strategy",
-    "member2_exp1": "40+ years of experience as a robotic engineering academician.",
-    "member2_exp2": "Proven startup developer with a focus on innovation.",
-    "member2_exp3": "Passionate about youth development & experiential learning.",
+    "member2_title": "Head of EdTech Strategy & Innovation",
+    "member2_exp1": "Over 40 years as an engineering-based academic.",
+    "member2_exp2": "Seasoned startup developer with a focus on innovation.",
+    "member2_exp3": "Passionate about youth development and experiential learning.",
     "member2_exp4": "Holds a PhD from the UK."
   },
   "achievements": {
     "title": "Key Achievements",
-    "item1_title": "Partnership",
-    "item1_desc": "Established a strong network of 20+ university partners across Southeast Asia for collaborative programs.",
-    "item2_title": "Recruitments",
-    "item2_desc": "Facilitated the placement of hundreds of international students, exceeding enrollment targets for our partners.",
-    "item3_title": "Internship",
-    "item3_desc": "Built a robust internship network with multinational corporations in key sectors like Banking, Aviation, and Technology.",
-    "item4_title": "Study Tour",
-    "item4_desc": "Successfully designed and executed numerous international study tours for enhanced global exposure and learning."
+    "item1_title": "Partnerships",
+    "item1_desc": "Forged a strong network of 20+ university partners across SEA for collaborative programs.",
+    "item2_title": "Recruitment",
+    "item2_desc": "Successfully facilitated hundreds of international student placements, exceeding partner enrolment targets.",
+    "item3_title": "Internships",
+    "item3_desc": "Built a robust internship network with MNCs in key sectors like Banking, Aviation, and Tech.",
+    "item4_title": "Study Tours",
+    "item4_desc": "Successfully designed and executed multiple international study tours for enhanced global exposure."
   },
   "contact": {
     "title": "Let's Connect",
@@ -77,6 +78,11 @@
     "email": "Email"
   },
   "footer": {
-    "copy": "© 2025 EduConnect Services. All Rights Reserved."
+    "about": "About",
+    "services": "Services",
+    "partners": "Partners",
+    "news": "News",
+    "contact": "Contact",
+    "copy": "© 2025 EduConnect Services. All rights reserved."
   }
 }

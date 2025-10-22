@@ -1,9 +1,10 @@
 {
   "header": {
+    "home": "Trang chủ",
     "about": "Về chúng tôi",
     "services": "Dịch vụ",
-    "team": "Đội ngũ",
-    "achievements": "Thành tựu",
+    "partners": "Đối tác",
+    "news": "Tin tức",
     "contact": "Liên hệ"
   },
   "hero": {
@@ -77,6 +78,11 @@
     "email": "Email"
   },
   "footer": {
+    "about": "Giới thiệu",
+    "services": "Dịch vụ",
+    "partners": "Đối tác",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
     "copy": "© 2025 EduConnect Services. Mọi quyền được bảo lưu."
   }
 }

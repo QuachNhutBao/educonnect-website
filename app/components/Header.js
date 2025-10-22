@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image'
+import Link from 'next/link' // Đã import Link
 import ThemeSwitcher from './ThemeSwitcher'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
@@ -6,12 +9,14 @@ import { useState } from 'react'
 export default function Header({ content, lang, toggleLang }) {
   const [isOpen, setIsOpen] = useState(false)
 
+  // Đã cập nhật mảng navLinks để trỏ đến các trang mới
   const navLinks = [
-    { href: '#about', label: content.about },
-    { href: '#services', label: content.services },
-    { href: '#team', label: content.team },
-    { href: '#achievements', label: content.achievements },
-    { href: '#contact', label: content.contact },
+    { href: '/', label: content.home },
+    { href: '/about', label: content.about },
+    { href: '/services', label: content.services },
+    { href: '/partners', label: content.partners },
+    { href: '/news', label: content.news },
+    { href: '/contact', label: content.contact },
   ]
 
   return (
@@ -19,16 +24,18 @@ export default function Header({ content, lang, toggleLang }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="flex items-center gap-2">
+            {/* Đã thay <a> bằng <Link> */}
+            <Link href="/" className="flex items-center gap-2">
               <Image src="/Logo_Educonnect.png" alt="EduConnect Logo" width={40} height={40} />
               <span className="text-xl font-bold text-brand-blue">EduConnect</span>
-            </a>
+            </Link>
           </div>
           <nav className="hidden md:flex md:items-center md:gap-8">
             {navLinks.map(link => (
-              <a key={link.href} href={link.href} className="font-medium text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors">
+              // Đã thay <a> bằng <Link>
+              <Link key={link.href} href={link.href} className="font-medium text-gray-600 dark:text-gray-300 hover:text-brand-blue dark:hover:text-brand-blue transition-colors">
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="flex items-center gap-4">
@@ -51,9 +58,15 @@ export default function Header({ content, lang, toggleLang }) {
       {isOpen && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-2">
           {navLinks.map(link => (
-            <a key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800">
+            // Đã thay <a> bằng <Link> và giữ lại onClick
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
               {link.label}
-            </a>
+            </Link>
           ))}
           <button
             onClick={() => {
