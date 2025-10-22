@@ -7,8 +7,9 @@ import Leadership from '../components/Leadership'
 export default function AboutPage() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  if (!content) {
+  // 1. TIỀN GUARD NÂNG CẤP
+  // Chờ 3 key này
+  if (!content.aboutPage || !content.mission || !content.leadership) {
     return null;
   }
 

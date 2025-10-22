@@ -6,8 +6,8 @@ import Contact from '../components/Contact'
 export default function ContactPage() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  if (!content) {
+  // 1. TIỀN GUARD NÂNG CẤP
+  if (!content.contact) {
     return null;
   }
 

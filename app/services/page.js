@@ -6,8 +6,8 @@ import FeaturedServices from '../components/FeaturedServices'
 export default function ServicesPage() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  if (!content) {
+  // 1. TIỀN GUARD NÂNG CẤP
+  if (!content.servicesPage || !content.services) {
     return null;
   }
 

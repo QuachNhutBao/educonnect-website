@@ -10,11 +10,10 @@ import Contact from './components/Contact'
 export default function Home() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  // Nếu content chưa tải xong, không render gì cả (hoặc_
-  // trả về một component "Đang tải...")
-  if (!content) {
-    return null; 
+  // 1. TIỀN GUARD NÂNG CẤP
+  // Chờ cho đến khi các key CỤ THỂ được tải
+  if (!content.hero || !content.whyChooseUs || !content.partnersGrid) {
+    return null; // Hoặc trả về một component "Đang tải..."
   }
 
   // 2. Giờ thì code bên dưới đã an toàn

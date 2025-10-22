@@ -6,8 +6,8 @@ import FeaturedPost from '../components/FeaturedPost'
 export default function NewsPage() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  if (!content) {
+  // 1. TIỀN GUARD NÂNG CẤP
+  if (!content.newsPage || !content.newsSection) {
     return null;
   }
 

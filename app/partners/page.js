@@ -6,8 +6,8 @@ import PartnersGrid from '../components/PartnersGrid'
 export default function PartnersPage() {
   const { content } = useLanguage()
 
-  // 1. THÊM GUARD
-  if (!content) {
+  // 1. TIỀN GUARD NÂNG CẤP
+  if (!content.partnersPage || !content.partnersGrid) {
     return null;
   }
 
