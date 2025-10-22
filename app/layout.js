@@ -1,12 +1,13 @@
 import './globals.css'
-import { Montserrat } from 'next/font/google' // Đã đổi sang Montserrat
+import { Montserrat } from 'next/font/google'
 import { ThemeProvider } from './theme-provider'
+import FloatingContact from './components/FloatingContact' // 1. IMPORT
 
 // Cấu hình font Montserrat
 const montserrat = Montserrat({
-  subsets: ['latin', 'vietnamese'], // Thêm tiếng Việt
-  weights: ['400', '600', '700', '800'], // Thêm các độ đậm
-  variable: '--font-montserrat', // Cần thiết cho Tailwind
+  subsets: ['latin', 'vietnamese'],
+  weights: ['400', '600', '700', '800'],
+  variable: '--font-montserrat',
 })
 
 export const metadata = {
@@ -17,10 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* Áp dụng class của Montserrat */}
       <body className={montserrat.className}> 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          
+          {/* 2. THÊM NÚT NỔI VÀO ĐÂY */}
+          <FloatingContact />
+
         </ThemeProvider>
       </body>
     </html>
